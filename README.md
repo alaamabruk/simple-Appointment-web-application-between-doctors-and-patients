@@ -7,6 +7,7 @@ simple Appointment web application between doctors and patients.
 # notes the application 
  * the application has 3 services and configuration service(Eureka Server) 
  that hold all the configuration for those services.
+ * using local DataBase (MYSQL).
  
 # application services :
      * gateway micro service : runs on port 8005
@@ -29,7 +30,7 @@ simple Appointment web application between doctors and patients.
     * localhost:8005/api/users/register-patient          // register a patient (POST)       
     * localhost:8005/api/users/is-authenticate
     * localhost:8000/api/appointments                    // return all appointments
-	  * localhost:8000/api/add-Appointment                  // Doctor add appointments (POST)
+    * localhost:8000/api/add-Appointment                  // Doctor add appointments (POST)
     * localhost:8000/api/appointments/available          // return all available appointments
     * localhost:8000/api/appointments/{appointementId}/is-available     // check if appointment with id=? is available  
     * localhost:8000/api/appointments/{appointmentId}/mark-unavailable  //mark appointment as unavilable  (POST)
